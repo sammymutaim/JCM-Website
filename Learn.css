@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.nav{
+        overflow: hidden;
+        background-color: #baa7a7;
+        
+}
+.nav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  body{
+    background-image: url("kiengei.jpg,");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+  }
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .nav a.active{
+    background-color: #3d3838;
+    font-size: larger;
+    text-shadow: 0cap;
+  }
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
